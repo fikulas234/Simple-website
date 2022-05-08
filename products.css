@@ -20,7 +20,7 @@ nav ul {
   margin: 0;
 }
 
-a {
+li a {
   text-decoration: none;
   color: white;
 }
@@ -195,6 +195,11 @@ main {
   height: 45px;
 }
 
+.title a {
+  text-decoration: none;
+  color: #000000;
+}
+
 .img-container {
   width: 60%;
   height: 90px;
@@ -279,6 +284,10 @@ img {
   margin: 16px 0;
   font-size: 18px;
   font-weight: bold;
+}
+.social-networks a {
+  text-decoration: none;
+  color: #fff;
 }
 
 #follow-us {
