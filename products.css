@@ -1,0 +1,504 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 800px;
+  font-family: "Roboto", sans-serif;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  height: 60px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li a::after {
+  content: "";
+  width: 0%;
+  background: white;
+  height: 2px;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+li a:hover::after {
+  width: 100%;
+}
+
+header {
+  background-color: #0a7e8c;
+  width: 100%;
+  top: 0;
+  margin: 0 auto 60px auto;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+}
+
+.add-cart {
+  width: 100%;
+  height: 100%;
+  background-color: #40826d;
+  color: white;
+  border: 0;
+  border-radius: 4px;
+  border-color: #40826d;
+  font-family: "Roboto";
+}
+
+.add-cart:hover {
+  background-color: #004040;
+}
+
+p {
+  text-align: center;
+  margin: 5px 0 8px 0;
+}
+
+span {
+  font-size: 20px;
+}
+
+.shoe-number {
+  font-size: 12px;
+  color: gray;
+  margin: 0;
+}
+
+.b-number {
+  text-align: center;
+  display: none;
+}
+
+.product:hover .b-number {
+  display: block;
+}
+
+.b-number button {
+  background-color: white;
+  border: 2px solid #40826d;
+  border-radius: 4px;
+  border-color: #40826d;
+  font-family: "Roboto";
+}
+
+.b-number button:hover {
+  background-color: #40826d;
+  color: white;
+}
+
+.container {
+  width: 1200px;
+  margin: 180px auto 100px auto;
+  height: 1200px;
+  display: flex;
+}
+
+aside {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px 0 20px;
+  background-color: #74747421;
+}
+
+.filter {
+  border: 0;
+  border-bottom: 1px solid #dcdcdc;
+  height: 100%;
+}
+
+.filter p {
+  color: #40826d;
+  font-weight: 500;
+  margin: 10px 10px;
+}
+
+.filter div:nth-child(1) {
+  border-bottom: 0;
+}
+
+/* .f1 {
+    flex: 1 1 0;
+}
+
+.f2 {
+    flex: 1 1 0;
+}
+ */
+.f3 {
+  /* flex: 1 1 0; */
+  border: 0;
+}
+
+main {
+  border: 1px solid #dcdcdc;
+  border-left: 0;
+  height: 100%;
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.products {
+  border: 1px solid #dcdcdc;
+  width: 250px;
+  height: 200px;
+  margin: 10px;
+}
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 5px;
+  justify-content: space-between;
+}
+
+.div-product {
+  display: flex;
+  column-gap: 5px;
+}
+
+.shoe-title {
+  font-weight: 500;
+}
+
+.title {
+  width: 100%;
+  height: 45px;
+}
+
+.img-container {
+  width: 60%;
+  height: 90px;
+}
+
+.discount,
+.brand,
+.color {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.discount label,
+.brand label,
+.color label {
+  margin: 5px;
+}
+
+.pr-container {
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.image {
+  height: 100%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.price,
+.cart {
+  height: 40px;
+}
+
+.price {
+  text-align: center;
+  line-height: 40px;
+}
+
+.top-button {
+  display: flex;
+  justify-content: end;
+}
+
+.top-button a:first-child {
+  text-decoration: none;
+  padding: 15px;
+  color: white;
+  background: #0a7e8c;
+  border-radius: 100px;
+  margin-right: 30px;
+  margin-bottom: 40px;
+}
+
+.content {
+  display: flex;
+  justify-content: left;
+  margin: 0 60px;
+  column-gap: 40px;
+}
+
+.content li {
+  font-size: 14px;
+}
+
+.social-networks {
+  margin: 0 60px;
+}
+
+.social-networks ul {
+  margin-top: 0;
+}
+
+.social-networks li {
+  margin: 16px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#follow-us {
+  margin-bottom: 18px;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer {
+  background-color: #0a7e8c;
+  color: white;
+  height: 180px;
+  text-align: center;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+}
+
+.footer li {
+  height: 30px;
+}
+
+.footer p {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 16px 0 0 0;
+}
+
+footer {
+  color: #fff;
+  text-align: center;
+  background-color: #0a7e8c;
+  padding-bottom: 10px;
+}
+
+footer p {
+  margin: 0;
+}
+
+.footer img {
+  width: 30px;
+  height: 30px;
+}
+
+h1 {
+  color: #40826d;
+}
+
+.lists {
+  display: flex;
+  flex-direction: column;
+}
+
+.lists ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.burger-nav {
+  display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+
+  /* main {
+    justify-content: left;
+  } */
+}
+
+@media only screen and (max-width: 992px) {
+  .footer {
+    flex-direction: column;
+    height: 400px;
+  }
+
+  .content {
+    justify-content: center;
+  }
+
+  .social-networks {
+    max-width: 400px;
+    margin: 0 auto 40px auto;
+  }
+
+  .form-container {
+    max-width: 570px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    height: 2400px;
+  }
+
+  aside {
+    width: 35%;
+  }
+
+  main {
+    width: 65%;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  header {
+    z-index: 2;
+  }
+
+  aside {
+    width: 35%;
+  }
+
+  main {
+    width: 65%;
+  }
+
+  .container {
+    width: 100%;
+    height: 2000px;
+  }
+
+  .form-container {
+    max-width: 390px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .container {
+    height: 2400px;
+    width: 390px;
+    position: static;
+    display: block;
+    margin-bottom: 200px;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    justify-content: end;
+  }
+  nav {
+    margin-right: 10px;
+  }
+
+  aside {
+    width: 100%;
+    height: 150px;
+    margin-top: -100px;
+  }
+
+  .discount,
+  .brand,
+  .color {
+    display: none;
+  }
+
+  .filter {
+    height: 100px;
+  }
+
+  .filter p {
+    margin-top: 15px;
+  }
+
+  main {
+    width: 390px;
+    justify-content: center;
+  }
+
+  .product {
+    width: 300px;
+  }
+
+  .top-button {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    margin-right: 10px;
+  }
+
+  .burger-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40px;
+    height: 100%;
+  }
+
+  .burger-nav span {
+    width: 100%;
+    height: 3px;
+    background: white;
+    display: flex;
+    align-self: center;
+    margin: 5px 0;
+    border-radius: 2px;
+  }
+
+  .footer p {
+    margin-bottom: 0;
+  }
+}

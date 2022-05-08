@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator broja potrebnih plocica</title>
+    <link rel="stylesheet" href="zadatak2.css" />
+  </head>
+  <body>
+    <h1>Unesite trazene mere da biste izracunali potreban broj plocica</h1>
+    <form method="post" action="zadatak2.php">
+      <label for="zid1">Unesite visinu zida[m]: </label>
+      <input type="number" id="zid1" value="zid1" name="zid1" min="0" />
+      <br />
+      <label for="zid2">Unesite sirinu zida[m]: </label>
+      <input type="number" id="zid2" value="zid2" name="zid2" min="0" />
+      <br />
+      <label for="plocica1">Unesite duzinu plocice[cm]: </label>
+      <input
+        type="number"
+        id="plocica1"
+        value="plocica1"
+        name="plocica1"
+        min="0"
+      />
+      <br />
+      <label for="plocica2">Unesite sirinu plocice[cm]: </label>
+      <input
+        type="number"
+        id="plocica2"
+        value="plocica2"
+        name="plocica2"
+        min="0"
+        step="0.1"
+      />
+      <br />
+      <button type="submit">Izracunaj</button>
+    </form>
+  </body>
+</html>
