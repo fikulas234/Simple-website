@@ -1,1 +1,1 @@
-SEE WEBSITE : https://fikulas234.github.io/Simple-website/
+See website : https://fikulas234.github.io/Simple-website/
